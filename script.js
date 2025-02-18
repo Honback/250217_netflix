@@ -1,16 +1,17 @@
 // API
-import { API_KEY } from "./env.js";
+// import { API_KEY } from "./env.js";
 
 const tmdbCommand = "https://api.themoviedb.org/3";
 
 const fetchMoives1 = async () => {
-  const url = `${tmdbCommand}/movie/now_playing?api_key=${API_KEY}&language=ko-kr&page=1`;
+  // const url = `${tmdbCommand}/movie/now_playing?api_key=${API_KEY}&language=ko-kr&page=1`;
+  const url = `${tmdbCommand}/movie/now_playing?api_key=b95d81b88e2e3b752d3af2380e4a6e16&language=ko-kr&page=1`;
   const response = await fetch(url);
   const { results } = await response.json();
   return results;
 };
 const fetchMoives2 = async () => {
-  const url = `${tmdbCommand}/movie/upcoming?api_key=${API_KEY}&language=ko-kr&page=1`;
+  const url = `${tmdbCommand}/movie/upcoming?api_key=b95d81b88e2e3b752d3af2380e4a6e16&language=ko-kr&page=1`;
   const response = await fetch(url);
   const { results } = await response.json();
   console.log(results);
