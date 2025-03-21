@@ -1,5 +1,5 @@
-@import url(/public/Netflix_Project/styles/reset.css);
-@import url(/public/Netflix_Project/styles/variables.css);
+@import url(./Netflix_Project/styles/reset.css);
+@import url(./Netflix_Project/styles/variables.css);
 
 body {
   background: #000;

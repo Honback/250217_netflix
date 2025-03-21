@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
-@import url(/public/Netflix_Project/styles/reset.css);
-@import url(/public/Netflix_Project/styles/variables.css);
+@import url(./Netflix_Project/styles/reset.css);
+@import url(./Netflix_Project/styles/variables.css);
 
 body {
   background: var(--main-dark-color);

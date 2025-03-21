@@ -47,9 +47,7 @@ window.onload = function () {
     let districtData = {};
     const overlays = []; // 모든 오버레이를 저장할 배열
 
-    fetch(
-      "/public/TTareungyi_Project/data/result_file/자치구별 대여소 분포도.csv"
-    )
+    fetch("./TTareungyi_Project/data/result_file/자치구별 대여소 분포도.csv")
       .then((response) => response.text())
       .then((csvText) => {
         const lines = csvText.trim().split("\n");
@@ -65,7 +63,7 @@ window.onload = function () {
         const minCount = Math.min(...rentalCounts);
         const maxCount = Math.max(...rentalCounts);
 
-        return fetch("/public/TTareungyi_Project/json_file/seoul_geo.json")
+        return fetch("./TTareungyi_Project/json_file/seoul_geo.json")
           .then((response) => response.json())
           .then((data) => {
             // console.log("Total features:", data.features.length); // 자치구 개수 확인
@@ -232,7 +230,7 @@ window.onload = function () {
     document.getElementById("map").classList.add("blur");
 
     fetch(
-      `/public/TTareungyi_Project/data/result_file/24년-월대여량-${selectedMonth}.csv`
+      `./TTareungyi_Project/data/result_file/24년-월대여량-${selectedMonth}.csv`
     )
       .then((response) => response.text())
       .then((csvText) => {
@@ -335,7 +333,7 @@ window.onload = function () {
     document.getElementById("map").classList.add("blur");
 
     fetch(
-      `/public/TTareungyi_Project/data/result_file/출퇴근시간대여량-${selectedMonth}.csv`
+      `./TTareungyi_Project/data/result_file/출퇴근시간대여량-${selectedMonth}.csv`
     )
       .then((response) => {
         if (!response.ok) {
