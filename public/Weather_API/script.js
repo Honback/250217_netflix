@@ -1,4 +1,4 @@
-import { weather_API_KEY, unsplash_API_KEY } from "/public/env.js";
+import { weather_API_KEY, unsplash_API_KEY } from "../env.js";
 
 const getCurrentWeather = (latitude, longitude) => {
   const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weather_API_KEY}&units=metric`;
